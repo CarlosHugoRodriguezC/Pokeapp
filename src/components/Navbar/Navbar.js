@@ -17,7 +17,7 @@ export const Navbar = ({ generation, setGeneration }) => {
     <div className='navbar'>
       <nav className='navbar__nav'>
         <Link
-          to='/pokemons'
+          to='/Pokeapp/pokemons'
           className={
             !!query.get('generation')
               ? 'navbar__nav-link'
@@ -26,7 +26,7 @@ export const Navbar = ({ generation, setGeneration }) => {
           All Pokemon
         </Link>
         <Link
-          to='/pokemons?generation=1'
+          to='/Pokeapp/pokemons?generation=1'
           className={
             query.get('generation') && query.get('generation') === 1
               ? 'navbar__nav-link navbar__nav-link--active'
@@ -35,7 +35,7 @@ export const Navbar = ({ generation, setGeneration }) => {
           Generation 1
         </Link>
         <Link
-          to='/pokemons?generation=2'
+          to='/Pokeapp/pokemons?generation=2'
           className={
             query.get('generation') && query.get('generation') === 2
               ? 'navbar__nav-link navbar__nav-link--active'

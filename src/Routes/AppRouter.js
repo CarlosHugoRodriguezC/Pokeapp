@@ -7,9 +7,12 @@ export const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/pokemons' exact element={<Home />} />
-        <Route path='/pokemon/:name' element={<PokemonDetail />} />
-        <Route path='/*' element={<Navigate replace to={'/pokemons'} />} />
+        <Route path='/Pokeapp/pokemons' exact element={<Home />} />
+        <Route path='/Pokeapp/pokemon/:name' element={<PokemonDetail />} />
+        <Route
+          path='/*'
+          element={<Navigate replace to={'/Pokeapp/pokemons'} />}
+        />
       </Routes>
     </BrowserRouter>
   );

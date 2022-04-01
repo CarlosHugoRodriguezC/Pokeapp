@@ -22,7 +22,7 @@ export const GalleryCard = ({ index, pokemon, condition }) => {
   }, [pokemon]);
 
   useEffect(() => {
-    if (_pokemon?.id) {
+    if (!!_pokemon?.id) {
       setImg(
         `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${_pokemon?.id}.svg`
       );
@@ -74,7 +74,7 @@ export const GalleryCard = ({ index, pokemon, condition }) => {
                 <span>Capture rate: </span> {_pokemon?.capture_rate}
               </p>
               <Link
-                to={`/pokemon/${_pokemon?.name}`}
+                to={`/Pokeapp/pokemon/${_pokemon?.name}`}
                 className='gallery__card__container__info__arrow'>
                 <span className='material-icons'>arrow_forward</span>
               </Link>

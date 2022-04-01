@@ -1,5 +1,6 @@
 import './App.scss';
 import pokeball from './assets/images/pokeball.png';
+import pokemon_logo from './assets/images/Pokemon-Logo.png';
 import { AppRouter } from './Routes/AppRouter.js';
 
 function App() {
@@ -13,7 +14,12 @@ function App() {
       <main className='main'>
         <AppRouter />
       </main>
-      <footer className='footer'></footer>
+      <footer className='footer'>
+        <div></div>
+        <div>
+          <img src={pokemon_logo} width='100' height='auto'></img>
+        </div>
+      </footer>
     </>
   );
 }

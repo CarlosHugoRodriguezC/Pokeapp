@@ -38,4 +38,79 @@ body #root {
 
 .footer {
   min-height: 4rem;
+  display: flex;
+  padding: 0 2.5rem;
+  justify-content: space-between;
+}
+
+.margin-x-auto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-muted {
+  color: $color-muted;
+  &--lighter {
+    color: lighten($color-muted, 50%);
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+.link-no-underline {
+  text-decoration: none;
+}
+
+.w-full {
+  width: 100%;
+}
+.padding-2 {
+  padding: 2rem;
 }
