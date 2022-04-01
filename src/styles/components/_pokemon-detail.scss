@@ -1,0 +1,102 @@
+.pokemon-detail {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-secondary;
+    text-transform: capitalize;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    color: $color-white;
+    background-color: $color-blue;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    min-width: 6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin: 1rem 0;
+  }
+  &__image {
+    width: auto;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin: 2rem auto;
+  }
+  &__grid-item {
+    width: 100%;
+    min-height: 10rem;
+    background-color: $color-primary;
+    position: relative;
+    padding: 3rem;
+    border-radius: 10px;
+    &__title {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: $color-white;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    &__subtitle {
+      font-size: 0.8rem;
+      color: $color-muted;
+      margin-bottom: 2rem;
+    }
+    &__label {
+      // position: absolute;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: $color-white;
+      padding: 0.5rem;
+    }
+    &__value {
+      font-size: 0.8rem;
+      color: lighten($color-muted, 30%);
+      font-weight: bold;
+      margin-bottom: 2rem;
+      padding: 0.5rem;
+    }
+    &__badge {
+      position: absolute;
+      right: 1rem;
+      color: $color-accents;
+    }
+    &__description {
+      z-index: 0;
+      font-size: 0.8rem;
+      color: $color-muted;
+      margin-bottom: 2rem;
+    }
+    &__info-item {
+      margin: 0.5rem 0 !important;
+    }
+  }
+  &__poke-info {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pokemon-detail {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

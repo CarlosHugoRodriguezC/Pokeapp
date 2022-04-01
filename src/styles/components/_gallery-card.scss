@@ -1,0 +1,104 @@
+.gallery__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 5px;
+  max-height: 20rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out 0.2s;
+  }
+
+  &:hover &__container {
+    // background-color: $color-primary;
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    transition: all 0.5s ease-in-out 0.2s;
+  }
+
+  &:hover &__container__image {
+    // min-height: 10rem;
+    z-index: 5;
+    transform: scale(0.7);
+    transition: all 0.5s ease-in-out 0.2s;
+  }
+
+  &:hover &__container__info {
+    border-radius: 25px 25px 0 0;
+    padding-top: 4rem;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out 0.2s;
+    &__title {
+      color: $color-white;
+    }
+    &__subtitle {
+      color: $color-white;
+      margin-bottom: 1.5rem;
+    }
+    hr {
+      border-color: $color-accents;
+      margin-bottom: 1rem;
+    }
+    &__description {
+      color: $color-white;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+
+    &__image {
+      position: relative;
+      width: auto;
+      height: 15rem;
+      padding: 1rem;
+      border-radius: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__info {
+      padding: 1rem;
+      width: 100%;
+      min-height: 10rem;
+      background-color: $color-primary;
+      position: relative;
+      &__title {
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-weight: normal;
+        color: $color-white;
+      }
+      &__subtitle {
+        font-size: 0.8rem;
+        color: $color-muted;
+        margin-bottom: 2rem;
+      }
+      &__badge {
+        position: absolute;
+        right: 1rem;
+        color: $color-accents;
+      }
+      &__description {
+        z-index: 0;
+        font-size: 0.8rem;
+        color: $color-muted;
+        margin-bottom: 2rem;
+      }
+      &__arrow {
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+        color: lighten($color-primary, 50%);
+      }
+    }
+  }
+}

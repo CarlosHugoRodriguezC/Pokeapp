@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import pokeball from './assets/images/pokeball.png';
+import { AppRouter } from './Routes/AppRouter.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className='header'>
+        <div className='logo'>
+          <img src={pokeball} width='40' height='auto'></img>
+        </div>
       </header>
-    </div>
+      <main className='main'>
+        <AppRouter />
+      </main>
+      <footer className='footer'></footer>
+    </>
   );
 }
 
