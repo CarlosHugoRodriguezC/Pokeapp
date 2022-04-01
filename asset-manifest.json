@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/Pokeapp/static/css/main.e0840795.css",
-    "main.js": "/Pokeapp/static/js/main.9a8d9c57.js",
+    "main.css": "/Pokeapp/static/css/main.d468a3f8.css",
+    "main.js": "/Pokeapp/static/js/main.80468a35.js",
     "static/js/787.693fc393.chunk.js": "/Pokeapp/static/js/787.693fc393.chunk.js",
     "static/media/cut-loop.gif": "/Pokeapp/static/media/cut-loop.4768fd93d16d9460610c.gif",
+    "static/media/Pokemon-Logo.png": "/Pokeapp/static/media/Pokemon-Logo.e61842b24c1c888381a2.png",
+    "static/media/pokeball-r.png": "/Pokeapp/static/media/pokeball-r.1e479e0a796e4778a069.png",
     "static/media/pokeball.png": "/Pokeapp/static/media/pokeball.6e5d02a89b5d8ae134c0.png",
+    "static/media/pokeball-b.png": "/Pokeapp/static/media/pokeball-b.3e6273abd4b13ab5ded8.png",
     "index.html": "/Pokeapp/index.html",
-    "main.e0840795.css.map": "/Pokeapp/static/css/main.e0840795.css.map",
-    "main.9a8d9c57.js.map": "/Pokeapp/static/js/main.9a8d9c57.js.map",
+    "main.d468a3f8.css.map": "/Pokeapp/static/css/main.d468a3f8.css.map",
+    "main.80468a35.js.map": "/Pokeapp/static/js/main.80468a35.js.map",
     "787.693fc393.chunk.js.map": "/Pokeapp/static/js/787.693fc393.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0840795.css",
-    "static/js/main.9a8d9c57.js"
+    "static/css/main.d468a3f8.css",
+    "static/js/main.80468a35.js"
   ]
 }
